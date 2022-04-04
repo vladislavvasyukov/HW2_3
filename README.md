@@ -17,3 +17,23 @@ $ touch README.md
 ```
 $ go mod init hello
 ```
+
+
+### Создал коммит и запушил
+```
+$ git add .
+$ git commit -m"init commit"
+```
+
+### создал тег
+```
+$ git fetch
+$ git tag -a v0.0.1 -m"v0.0.1"
+$ git push origin v0.0.1
+$ git push origin main
+```
+
+### загрузил внешний модуль
+```
+$ go get rsc.io/quote
+```
