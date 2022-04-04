@@ -35,5 +35,21 @@ $ git push origin main
 
 ### загрузил внешний модуль
 ```
-$ go get rsc.io/quote
+$ go get rsc.io/quote@v1.4.0
 ```
+
+### передумали, и загрузили более свежую
+```
+$ go get rsc.io/quote@v1.5.2
+```
+
+### закомитили и создали новый tag
+```
+$ git add .
+$ git commit -m"add new package"
+$ git tag -a v1.0.0 -m"v1.0.0"
+$ git push origin v1.0.0
+$ git push origin main
+```
+
+### чтобы удалить неиспользуемые пакеты, используйте go mod tidy (у меня таких нет)
